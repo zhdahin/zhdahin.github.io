@@ -7,19 +7,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout 
         uses: actions/checkout@v2
         with:
           persist-credentials: false
 
-      - name: Install 🔧
+      - name: Install 
         run: npm install
 
-      - name: Lint 🧐
+      - name: Lint 
         run: npm run lint
 
-      - name: Build 🏗️
+      - name: Build 
         run: npm run build
 
-      - name: Test 🚨
+      - name: Test 
         run: npm test
