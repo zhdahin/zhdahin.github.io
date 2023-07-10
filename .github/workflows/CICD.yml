@@ -25,9 +25,9 @@ async function run() {
       );
 
       // Отправляем комментарий к пул реквесту нового участника
-      if (shouldComment) {
-        core.info("Commenting");
-        githubClient.issues.createComment({ owner, repo: repoName, issue_number: issueNumber, body: comment });
+    //  if (shouldComment) {
+      //  core.info("Commenting");
+      //  githubClient.issues.createComment({ owner, repo: repoName, issue_number: issueNumber, body: comment });
       }
     }
   } catch (err) {
