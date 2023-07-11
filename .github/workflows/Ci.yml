@@ -21,7 +21,7 @@ jobs:
     - name: Make output folder
       run: mkdir output
     - name: Clone master branch
-      run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/${GITHUB_ACTOR}/${GITHUB_ACTOR}.github.io.git" --branch master --single-branch ./output
+      run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/${GITHUB_ACTOR}/${GITHUB_ACTOR}.github.io.git" --branch main --single-branch ./output
     - name: Generate static pages
       run: pelican content -o output -s publishconf.py
     - name: Set git config and add changes
